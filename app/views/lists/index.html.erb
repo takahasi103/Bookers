@@ -2,6 +2,6 @@
 <% @lists.each do |list| %>
   <p>タイトル</p>
   <span>
-    <%= list.title %>
+    <%= link_to list.title, list_path(list.id) %>
   </span>
 <% end %>
